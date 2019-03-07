@@ -20,6 +20,34 @@ body,p,div,span{
 	text-align:center;
 	background:linear-gradient(90deg,#2D161E,#3E0020);
 }
+.Mou-bar{
+	width:95%;
+	margin-left:2.5%;
+	height:50px;
+	line-height:50px;
+	color:#fff;
+	text-decoration: none;
+	background-color:#999;
+}
+.Mou-bar .Mou-x{
+	width:40px;
+	height:50px;
+	position:relative;
+	float:left;
+	background-color:#223154;
+}
+.Mou-bar .Mou-ul li{
+	width:80px;
+	height:50px;
+	list-style:none;
+	float:left;
+	text-align:center;
+}
+.Mou-bar .Mou-ul li:hover{
+	background-color:#350C1F;
+	color:#fff;
+}
+/* * */
 
 .Hou-box{
 	width:100%;
@@ -50,3 +78,4 @@ body,p,div,span{
 	text-align:center;
 	
 }
+/* * */
