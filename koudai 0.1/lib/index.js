@@ -7,10 +7,13 @@ $(function(){
 	
 	var Mou_ul = $(".Mou-ul li");
 	var Mou_x = $(".Mou-x");
+
 	var Hou_Follow =$(".Hou-Follow");
 	var Hou_form = $(".Hou-form");
-	var hou_all = [".Hou-Follow",".Hou-form"]
-	var hou = [".Hou-form"];
+	var Hou_qrcode = $(".Hou-qrcode");
+
+	var hou = [".Hou-form",".Hou-qrcode"];
+	var hou_all = [".Hou-form",".Hou-qrcode",".Hou-Follow"];
 	houHide(hou);
 	// 回到首页
 	Mou_x.bind("click",function(){
@@ -39,6 +42,16 @@ $(function(){
 		$(".b-text").val(v);
 	});
 	// .Hou-form end
+	// .Hou-qrcode strat
+	$("#Qrcode").bind("click",function(){
+		var w = $(".W-code").val();
+		w = "http://"+w;
+		console.log(w);
+		$("#code").html("");
+		$("#code").qrcode(w);
+	})
+	
+	// .Hou-qrcode end
 
 });
 /**

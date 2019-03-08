@@ -3,6 +3,7 @@
 		<title>tools</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 		<script language="javascript" type="text/javascript" src="lib/jquery-3.0.0.js"> </script>
+		<script language="javascript" type="text/javascript" src="lib/jquery.qrcode.min.js"></script>
 		<script language="javascript" type="text/javascript" src="lib/index.js"></script>
 		<link rel="stylesheet" href="css/index.css" />
 		<style ></style>
@@ -16,7 +17,7 @@
 			</div>
 			<ul class="Mou-ul">
 				<li class="bar" id="Hou-form" data-name="Hou-form">字符串</li>
-				<li>二维码</li>
+				<li class="bar" id="Hou-qrcode" data-name="Hou-qrcode">二维码</li>
 				<li></li>
 			</ul>
 		</div>
@@ -41,6 +42,22 @@
 				</div>
 			</div>
 			<!-- 字符串修改 end -->
+			<!-- 二维码生成 .Hou-qrcode  -->
+			<!-- 引用于 https://github.com/jeromeetienne/jquery-qrcode ，感谢开发者 -->
+			<div class="Hou-qrcode">
+				<div class="Hou-bar">
+					<div class="bar-left">
+						<select>
+							<option>网站链接</option>
+						</select>
+					</div>
+					<div class="bar-right">
+						<div><input type="text" class="W-code" ></input></div>
+						<div><button id="Qrcode" class="Qrcode">生成二维码</button></div>
+					</div>
+				</div>
+				<div id="code"></div>
+			</div>
 
 			<!-- koudai-tools -->
 		</div>

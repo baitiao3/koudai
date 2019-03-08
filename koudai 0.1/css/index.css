@@ -78,4 +78,13 @@ body,p,div,span{
 	text-align:center;
 	
 }
+.Hou-box .Hou-qrcode .Hou-bar{
+	width:1080px;
+	height:200px;
+}
+.Hou-box .Hou-qrcode .Hou-bar .bar-left{
+	width:150px;
+	height:200px;
+	float:left;
+}
 /* * */
